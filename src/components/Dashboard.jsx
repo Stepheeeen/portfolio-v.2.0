@@ -11,14 +11,14 @@ const Dashboard = ({ children, bgImage }) => {
 
     const links = [
         { name: '_hello', path: '/' },
-        { name: '_about-me', path: '/about-me' },
+        { name: '_about-me', path: '/_about-me' },
         { name: '_projects', path: '/projects' },
     ];
 
     const footerLinks = [
-        { name: <img src={Twitter} className=''/>, path: '#' },
-        { name: <img src={Instagram} className=''/>, path: '#' },
-        { name: <img src={Github} className=''/>, path: 'https://github.com/stepheeeen', visible: 'md:hidden' },
+        { name: <img src={Twitter} className='' />, path: '#' },
+        { name: <img src={Instagram} className='' />, path: '#' },
+        { name: <img src={Github} className='' />, path: 'https://github.com/stepheeeen', visible: 'md:hidden' },
     ];
 
     return (
@@ -27,9 +27,9 @@ const Dashboard = ({ children, bgImage }) => {
                 <div className='h-full flex items-center font-[500] text-[14px]'>
                     <div className='flex items-center justify-between md:border md:border-1 md:border-[#1E2D3D] p-[11px] w-[97vw] md:w-[250px] text-[#607B96]'>
                         <Link to='/'>Stephen-Onucheyo</Link>
-                    <button className=' mr-2 md:hidden'>
-                    <img src={Hamburger} className='mr-1'/>
-                    </button>
+                        <button className=' mr-2 md:hidden'>
+                            <img src={Hamburger} className='mr-1' />
+                        </button>
                     </div>
                     <ul className='hidden md:flex'>
                         {links.map((link, i) => (
@@ -67,8 +67,8 @@ const Dashboard = ({ children, bgImage }) => {
                     </ul>
                 </div>
                 <div>
-                <Link to='https://github.com/stepheeeen' className={`hidden md:flex items-center justify-center border border-1 border-[#1E2D3D] p-[4px] w-[130px] hover:text-[#d7d7d7c2] text-[#607B96]`}>
-                        @Steph4n <span><img src={Github} className=' ml-[7px]'/></span>
+                    <Link to='https://github.com/stepheeeen' className={`hidden md:flex items-center justify-center border border-1 border-[#1E2D3D] p-[4px] w-[130px] hover:text-[#d7d7d7c2] text-[#607B96]`}>
+                        @Steph4n <span><img src={Github} className=' ml-[7px]' /></span>
                     </Link>
                 </div>
             </footer>
