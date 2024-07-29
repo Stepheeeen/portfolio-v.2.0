@@ -9,7 +9,7 @@ const Home = () => {
             <div className="w-full h-[90vh] flex items-center justify-center">
                 <div className='flex items-center md:ml-[80px]'>
                     <div className='p-[15px] md:mr-[25px] md:w-auto md:mt-[-25px]'>
-                        <p>Hi all. i am</p>
+                        <p className='text-[15px]'>Hi all. i am</p>
 
                         <h1 className='text-6xl my-2 md:my-1'>Stephen <br className='hidden md:block' /> Onucheyo</h1>
                         <p className='text-2xl md:text-xl md:text-[#4D5BCE] text-[#43D9AD]'> <span>&gt;</span> Software Developer</p>

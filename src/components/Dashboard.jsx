@@ -34,7 +34,7 @@ const Dashboard = ({ children, bgImage }) => {
                     <ul className='hidden md:flex'>
                         {links.map((link, i) => (
                             <li key={i}>
-                                <Link to={link.path} className={`border border-1 border-[#1E2D3D] p-[12px] w-[130px] hover:text-[#d7d7d7c2] ${pathname === link.path ? 'text-white  active' : 'text-[#607B96]'}`}>
+                                <Link to={link.path} className={`border border-1 border-[#1E2D3D] p-[12px] w-[130px] ${pathname === link.path ? 'text-white  active' : 'text-[#607B96] hover:text-[#d7d7d7c2]'}`}>
                                     {link.name}
                                 </Link>
                             </li>
