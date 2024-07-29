@@ -38,3 +38,18 @@ body{
 .active {
   border-bottom: 2px solid#FEA55F; 
 }
+
+.bgImage {
+  background-image: url('./assets/icon/BgImage.svg');
+  background-color: transparent; /* 'none' is not valid for background-color, use 'transparent' instead */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+  .bgImage {
+    background-image: url('./assets/icon/Blurs.svg');
+
+  }
+}
