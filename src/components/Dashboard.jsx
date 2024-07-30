@@ -5,7 +5,7 @@ import Github from '../assets/icon/GithubIcon.svg'
 import Instagram from '../assets/icon/InstagramIcon.svg'
 import Hamburger from '../assets/icon/HamburgerIcon.svg'
 
-const Dashboard = ({ children, bgImage }) => {
+const Dashboard = ({ children, bgImage, navStyle, footerStyle}) => {
     const location = useLocation();
     const pathname = location.pathname;
 
@@ -23,7 +23,7 @@ const Dashboard = ({ children, bgImage }) => {
 
     return (
         <div className={`relative bg-[#011627] w-[95.6%] md:w-[98%] m-auto h-[95vh] rounded border-2 border-[#1E2D3D] overflow-hidden`}>
-            <nav className='absolute w-full h-[45px] border border-1 border-[#1E2D3D] top-0 left-0 z-10 bg-inherit flex items-center justify-between'>
+            <nav className={`absolute w-full h-[45px] border border-1 border-[#1E2D3D] top-0 left-0 z-10 bg-inherit flex items-center justify-between ${navStyle}`}>
                 <div className='h-full flex items-center font-[500] text-[14px]'>
                     <div className='flex items-center justify-between md:border md:border-1 md:border-[#1E2D3D] p-[11px] w-[97vw] md:w-[250px] text-[#607B96]'>
                         <Link to='/'>Stephen-Onucheyo</Link>
@@ -48,10 +48,10 @@ const Dashboard = ({ children, bgImage }) => {
                     </Link>
                 </div>
             </nav>
-            <section className={`pt-[46px] pb-[33px] p-3 ${bgImage} h-[]`}>
+            <section className={`pt-[46px] pb-[33px] p-3 ${bgImage}`}>
                 {children}
             </section>
-            <footer className='absolute w-full h-[33px] border border-1 border-[#1E2D3D] bottom-0 left-0 z-10 bg-inherit flex items-center justify-between'>
+            <footer className={`absolute w-full h-[33px] border border-1 border-[#1E2D3D] bottom-0 left-0 z-10 bg-inherit flex items-center justify-between ${footerStyle}`}>
                 <div className='h-full flex items-center font-[500] text-[14px]'>
                     <div className='border border-1 border-[#1E2D3D] flex items-center px-3 h-full w-[270px] md:w-[130px] text-[#607B96]'>
                         find me in:

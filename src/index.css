@@ -53,3 +53,7 @@ body{
 
   }
 }
+
+.orderedList li{
+  padding-left: 20px;
+}
