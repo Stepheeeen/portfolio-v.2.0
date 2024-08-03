@@ -12,7 +12,7 @@ const Dashboard = ({ children, bgImage, navStyle, footerStyle}) => {
     const links = [
         { name: '_hello', path: '/' },
         { name: '_about-me', path: '/_about-me' },
-        { name: '_projects', path: '/projects' },
+        { name: '_projects', path: '/_projects' },
     ];
 
     const footerLinks = [
