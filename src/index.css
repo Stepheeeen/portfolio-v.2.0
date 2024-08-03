@@ -47,13 +47,18 @@ body{
   background-position: center;
 }
 
+.orderedList li{
+  padding-left: 20px;
+}
 @media screen and (max-width: 500px) {
   .bgImage {
     background-image: url('./assets/icon/Blurs.svg');
-
   }
-}
 
-.orderedList li{
-  padding-left: 20px;
+  .orderedList li{
+    margin-left: -10px;
+  }
+  /* .flow{
+    overflow-y: scroll;
+  } */
 }

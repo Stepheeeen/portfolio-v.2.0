@@ -48,7 +48,7 @@ const Dashboard = ({ children, bgImage, navStyle, footerStyle}) => {
                     </Link>
                 </div>
             </nav>
-            <section className={`pt-[46px] pb-[33px] p-3 ${bgImage}`}>
+            <section className={`pt-[46px] pb-[33px] p-3 overflow-y-auto ${bgImage}`}>
                 {children}
             </section>
             <footer className={`absolute w-full h-[33px] border border-1 border-[#1E2D3D] bottom-0 left-0 z-10 bg-inherit flex items-center justify-between ${footerStyle}`}>
