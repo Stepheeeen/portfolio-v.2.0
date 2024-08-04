@@ -13,23 +13,26 @@ import mongodb from '../assets/icon/mongodbIcon.svg'
 import mysql from '../assets/icon/mysqlIcon.svg'
 import expressjs from '../assets/icon/expressjsIcon.svg'
 import bootstrap from '../assets/icon/bootstrapIcon.svg'
+import figma from '../assets/icon/figmaIcon.svg'
+import nodeJs from '../assets/icon/nodeJsIcon.svg'
+import versioncontrol from '../assets/icon/versioncontrolIcon.svg'
 
 const Project = () => {
     const skills = [
         {source: html, text: 'HTML', },
         {source: css, text: 'CSS', },
         {source: react, text: 'React', },
+        {source: bootstrap, text: 'Bootstrap'},
+        {source: tailwind, text: 'TailwindCSS'},
         {source: javascript, text: 'Javascript'},
         {source: typescript, text: 'Typescript'},
         {source: reactnative, text: 'React Native'},
-        {source: tailwind, text: 'TailwindCSS'},
-        {source: mongodb, text: 'TailwindCSS'},
-        {source: mysql, text: 'TailwindCSS'},
-        {source: expressjs, text: 'TailwindCSS'},
-        {source: bootstrap, text: 'TailwindCSS'},
-        {source: bootstrap, text: 'TailwindCSS'},
-        {source: bootstrap, text: 'TailwindCSS'},
-        {source: bootstrap, text: 'TailwindCSS'},
+        {source: nodeJs, text: 'Node Js'},
+        {source: expressjs, text: 'ExpressJs'},
+        {source: mongodb, text: 'MongoDB'},
+        {source: mysql, text: 'mySQL'},
+        {source: versioncontrol, text: 'Github'},
+        {source: figma, text: 'Figma'},
 
     ]
     return (
@@ -43,7 +46,7 @@ const Project = () => {
                     </nav>
 
                     <div className='h-[93%] overflow-scroll p-2 pb-4'>
-                        <ul>
+                        <ul className='pb-7'>
                             {skills.map((index, k) => (
                                 <li key={k} className={`flex items-center text-[#607B96] hover:text-white transition-all mb-2 w-full ${index.custom}`}>
                                     <img src={index.source} alt={index.text} className='w-[15%]' />
@@ -54,6 +57,15 @@ const Project = () => {
                     </div>
                 </div>
             </Sidebar>
+
+            <main className='md:w-[80%]'>
+                <nav className='w-full '>
+                    
+                </nav>
+                <div>
+
+                </div>
+            </main>
         </Dashboard>
     )
 }
