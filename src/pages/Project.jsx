@@ -11,17 +11,21 @@ import reactnative from '../assets/icon/reactnativeIcon.svg'
 import tailwind from '../assets/icon/tailwindIcon.svg'
 import mongodb from '../assets/icon/mongodbIcon.svg'
 import mysql from '../assets/icon/mysqlIcon.svg'
+import Close from '../assets/icon/CloseIcon.svg'
 import expressjs from '../assets/icon/expressjsIcon.svg'
 import bootstrap from '../assets/icon/bootstrapIcon.svg'
 import figma from '../assets/icon/figmaIcon.svg'
 import nodeJs from '../assets/icon/nodeJsIcon.svg'
+import nextjs from '../assets/icon/nextjsIcon.svg'
 import versioncontrol from '../assets/icon/versioncontrolIcon.svg'
+import Card from '../components/Card'
 
 const Project = () => {
     const skills = [
         {source: html, text: 'HTML', },
         {source: css, text: 'CSS', },
         {source: react, text: 'React', },
+        {source: nextjs, text: 'Next', },
         {source: bootstrap, text: 'Bootstrap'},
         {source: tailwind, text: 'TailwindCSS'},
         {source: javascript, text: 'Javascript'},
@@ -59,11 +63,15 @@ const Project = () => {
             </Sidebar>
 
             <main className='md:w-[80%]'>
-                <nav className='w-full '>
-                    
+                <nav className='w-full md:w-full flex items-center border border-1 border-[#1E2D3D] h-[37px] mt-[-1px] border-t-0 border-l-0 md:border-l-0 border-r-0 md:ml-[238px]'>
+                    <button className='w-[37%] md:w-[15%] flex items-center justify-between text-[13px] border-b-0 border-t-0 border-l-0 md:border-l-1 text-[#607B96] h-full px-2 border border-1 border-[#1E2D3D]'>
+                        <p>portfolio</p>
+                        <img src={Close} alt="Close" />
+                    </button>
                 </nav>
-                <div>
 
+                <div className='w-full md:ml-[238px] h-full grid place-items-center overflow-y-scroll'>
+                    <Card css='bg-white h-[300px] w-[300px]' detail='' imageSrc='' info='' path='' skillSrc='' title=''/>
                 </div>
             </main>
         </Dashboard>
