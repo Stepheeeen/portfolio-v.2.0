@@ -73,7 +73,7 @@ const Project = () => {
                 </nav>
 
                 <div className='w-full md:ml-[238px] h-full grid place-items-center overflow-y-scroll'>
-                    <Card css='bg-[#011221] border border-1 border-[#1E2D3D] w-[400px]' detail='Keto' imageSrc={Travel} info='// hotel booking platform' path='https://keto-github-io.vercel.app/' skillSrc={JsImage} title='Keto'/>
+                    <Card css='bg-[#011221] border border-1 border-[#1E2D3D] w-[425px]' detail='Keto' imageSrc={Travel} info='//hotel booking platform' path='https://keto-github-io.vercel.app/' skillSrc={JsImage} title='Keto'/>
                 </div>
             </main>
         </Dashboard>
