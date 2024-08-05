@@ -17,8 +17,10 @@ import bootstrap from '../assets/icon/bootstrapIcon.svg'
 import figma from '../assets/icon/figmaIcon.svg'
 import nodeJs from '../assets/icon/nodeJsIcon.svg'
 import nextjs from '../assets/icon/nextjsIcon.svg'
-import versioncontrol from '../assets/icon/versioncontrolIcon.svg'
 import Card from '../components/Card'
+import versioncontrol from '../assets/icon/versioncontrolIcon.svg'
+import Travel from '../assets/images/travel.webp'
+import JsImage from '../assets/images/javascript.svg'
 
 const Project = () => {
     const skills = [
@@ -52,7 +54,7 @@ const Project = () => {
                     <div className='h-[93%] overflow-scroll p-2 pb-4'>
                         <ul className='pb-7'>
                             {skills.map((index, k) => (
-                                <li key={k} className={`flex items-center text-[#607B96] hover:text-white transition-all mb-2 w-full ${index.custom}`}>
+                            <li key={k} className={`flex items-center text-[#607B96] hover:text-white transition-all mb-2 w-full ${index.custom}`}>
                                     <img src={index.source} alt={index.text} className='w-[15%]' />
                                     <p className='ml-2 w-[85%]'>{index.text}</p>
                                 </li>
@@ -71,7 +73,7 @@ const Project = () => {
                 </nav>
 
                 <div className='w-full md:ml-[238px] h-full grid place-items-center overflow-y-scroll'>
-                    <Card css='bg-white h-[300px] w-[300px]' detail='' imageSrc='' info='' path='' skillSrc='' title=''/>
+                    <Card css='bg-[#011221] border border-1 border-[#1E2D3D] w-[400px]' detail='Keto' imageSrc={Travel} info='// hotel booking platform' path='https://keto-github-io.vercel.app/' skillSrc={JsImage} title='Keto'/>
                 </div>
             </main>
         </Dashboard>
