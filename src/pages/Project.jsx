@@ -24,23 +24,38 @@ import JsImage from '../assets/images/javascript.svg'
 
 const Project = () => {
     const skills = [
-        {source: html, text: 'HTML', },
-        {source: css, text: 'CSS', },
-        {source: react, text: 'React', },
-        {source: nextjs, text: 'Next', },
-        {source: bootstrap, text: 'Bootstrap'},
-        {source: tailwind, text: 'TailwindCSS'},
-        {source: javascript, text: 'Javascript'},
-        {source: typescript, text: 'Typescript'},
-        {source: reactnative, text: 'React Native'},
-        {source: nodeJs, text: 'Node Js'},
-        {source: expressjs, text: 'ExpressJs'},
-        {source: mongodb, text: 'MongoDB'},
-        {source: mysql, text: 'mySQL'},
-        {source: versioncontrol, text: 'Github'},
-        {source: figma, text: 'Figma'},
-
+        { source: html, text: 'HTML', },
+        { source: css, text: 'CSS', },
+        { source: react, text: 'React', },
+        { source: nextjs, text: 'Next', },
+        { source: bootstrap, text: 'Bootstrap' },
+        { source: tailwind, text: 'TailwindCSS' },
+        { source: javascript, text: 'Javascript' },
+        { source: typescript, text: 'Typescript' },
+        { source: reactnative, text: 'React Native' },
+        { source: nodeJs, text: 'Node Js' },
+        { source: expressjs, text: 'ExpressJs' },
+        { source: mongodb, text: 'MongoDB' },
+        { source: mysql, text: 'mySQL' },
+        { source: versioncontrol, text: 'Github' },
+        { source: figma, text: 'Figma' },
     ]
+    const project = [
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'ibiteesventures.com', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'keto-github-io.vercel.app/', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'thekingspalace-github-io.vercel.app', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'walcrapp.vercel.app', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'https://github.com/alexindevs/sonus-audio-reader', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'anwrk.com', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'uliuwa.vercel.app', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'topupbox.com/', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'maisonco.vercel.app', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'trilspay.vercel.app/', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'space-learning.vercel.app', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'goods-store-theta.vercel.app', imageSrc:Travel,},
+        {Title:'Keto', detail: 'keto', skillSrc: JsImage, info:'//hotel booking platform', path:'www.figma.com/design/qmRCsdz6SqnbvDykSuUXjN/Routine?m=auto&t=USiScrjPq0MUaijs-6', imageSrc:Travel,},
+    ]
+
     return (
         <Dashboard>
             <Sidebar>
@@ -54,7 +69,7 @@ const Project = () => {
                     <div className='h-[93%] overflow-scroll p-2 pb-4'>
                         <ul className='pb-7'>
                             {skills.map((index, k) => (
-                            <li key={k} className={`flex items-center text-[#607B96] hover:text-white transition-all mb-2 w-full ${index.custom}`}>
+                                <li key={k} className={`flex items-center text-[#607B96] hover:text-white transition-all mb-2 w-full ${index.custom}`}>
                                     <img src={index.source} alt={index.text} className='w-[15%]' />
                                     <p className='ml-2 w-[85%]'>{index.text}</p>
                                 </li>
@@ -71,10 +86,23 @@ const Project = () => {
                         <img src={Close} alt="Close" />
                     </button>
                 </nav>
-
-                <div className='w-full md:ml-[238px] h-full grid place-items-center overflow-y-scroll'>
-                    <Card css='bg-[#011221] border border-1 border-[#1E2D3D] w-[425px]' detail='Keto' imageSrc={Travel} info='//hotel booking platform' path='https://keto-github-io.vercel.app/' skillSrc={JsImage} title='Keto'/>
+                <div className="w-full md:ml-[230px] grid place-items-center pt-11">
+                <div className='w-[95%] h-[100vh] grid grid-cols-1 md:grid-cols-2  place-items-center overflow-y-auto pb-[19%]'>
+                    {project.map((card, index) => (
+                        <Card
+                        key={index}
+                            css='bg-[#011221] border border-1 border-[#1E2D3D] w-[480px]'
+                            detail={card.detail}
+                            imageSrc={card.imageSrc}
+                            info={card.info}
+                            path={`https://${card.path}`}
+                            skillSrc={card.skillSrc}
+                            title={card.Title}
+                        />
+                    ))}
+                    </div>
                 </div>
+
             </main>
         </Dashboard>
     )
