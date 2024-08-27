@@ -87,11 +87,11 @@ const Project = () => {
                     </button>
                 </nav>
                 <div className="w-full md:ml-[230px] grid place-items-center pt-11">
-                <div className='w-[95%] h-[100vh] grid grid-cols-1 md:grid-cols-2  place-items-center overflow-y-auto pb-[19%]'>
+                <div className='w-[93%] h-[100vh] grid grid-cols-1 md:grid-cols-2 place-items-center overflow-y-auto pb-[19%]'>
                     {project.map((card, index) => (
                         <Card
-                        key={index}
-                            css='bg-[#011221] border border-1 border-[#1E2D3D] w-[480px]'
+                            key={index}
+                            css='bg-[#011221] border border-1 border-[#1E2D3D] md:w-[410px] w-[370px]'
                             detail={card.detail}
                             imageSrc={card.imageSrc}
                             info={card.info}
